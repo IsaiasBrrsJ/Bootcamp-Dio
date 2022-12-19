@@ -7,9 +7,10 @@ namespace CriandoClasses.Models
 {
     public class Pessoa
     {
-        public string Nome { get; set; }
+        public string Nome { get; set; } //Atributos
 
-        public int Idade { get; set; }
+
+        public int Idade { get; set; } //Atributos
 
         public void Apresentar()
         {
