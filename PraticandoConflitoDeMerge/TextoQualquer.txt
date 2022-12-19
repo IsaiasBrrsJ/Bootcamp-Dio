@@ -1,2 +1,4 @@
 Aqui temos um texto qualquer
 Aqui temos outro texto qualquer
+Aqui estou editando direto no gitHub
+Aqui é outra edição direta.
