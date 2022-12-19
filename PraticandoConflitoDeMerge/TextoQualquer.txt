@@ -1,2 +1,4 @@
 Aqui temos um texto qualquer
 Aqui temos outro texto qualquer
+estou escrevendo aqui pra provovar um conflito de merge
+aqui também
