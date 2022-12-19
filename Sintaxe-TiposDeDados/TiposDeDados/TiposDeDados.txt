@@ -1,0 +1,14 @@
+String = Cadeia de caracteres
+
+char = Um caracter
+
+bool = True ou falso
+
+Int = valor inteiro sem pontos e virgulas
+
+Float = valor de ponto flutuante pode conter virgular ou pontos
+
+Decimal = Valores monetários
+
+Double = Valores de ponto flutuante, mais preciso que float
+
