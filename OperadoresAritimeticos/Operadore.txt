@@ -1,0 +1,13 @@
++ Adição
+
+- subtração
+
+* multiplicação
+
+/ Divisão
+
+% Módulo, resto da divisão
+
+++ Incremento, ou seja vai incrementando de um em um
+
+-- Decremento, vai removendo de um em um
