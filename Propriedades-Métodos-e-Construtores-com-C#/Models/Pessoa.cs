@@ -10,12 +10,19 @@ namespace Propriedades_Métodos_e_Construtores_com_C_.Models
     /// </summary>
     public class Pessoa
     {
+
+        public Pessoa() { }
+        public Pessoa(string nome, string sobrenome)
+        {
+            Nome = nome;
+            Sobrenome = sobrenome;
+        }
         private string _nome;
         private int _idade;
         public string Nome
         {
             get => _nome.ToUpper();
-            set
+            private set
             {
                 if (String.IsNullOrWhiteSpace(value))
                 {
@@ -33,7 +40,7 @@ namespace Propriedades_Métodos_e_Construtores_com_C_.Models
         public int Idade
         {
             get => _idade;
-            set
+            private set
             {
                 if (value < 0)
                 {
