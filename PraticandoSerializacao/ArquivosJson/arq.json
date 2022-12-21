@@ -1,0 +1,11 @@
+[
+  {
+    "Id": 1,
+    "Nome": "Barros",
+    "Produtos": {
+      "Id": 1,
+      "Nome": "Chave Windows 10",
+      "Preco": 33.4
+    }
+  }
+]
