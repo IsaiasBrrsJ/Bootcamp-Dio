@@ -4,7 +4,7 @@
 Console,WriteLine("Hello World!!");
 ```
 
-|Bootcamp  C# Backend - DIO
+> - Bootcamp  C# Backend - DIO
 
 
-(Meu Linkedin)[https://www.linkedin.com/in/isaias-j-barros/]
+(https://www.linkedin.com/in/isaias-j-barros/)[Linkedin]
