@@ -10,12 +10,16 @@ builder.Services.AddControllers().AddJsonOptions(x =>
     x.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
 });
 
+
 builder.Services.AddDbContext<DataContext>(options =>
 {
 
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 
 });
+
+
+
 
 
 
