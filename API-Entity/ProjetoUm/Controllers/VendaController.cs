@@ -26,10 +26,14 @@ namespace ProjetoUm.Controllers
             try
             {
 
-                var venda = _context.Vendas.Include(x => x.Produtos).Where(p => p.Id == idVenda).Select(x => new { x.Cliente, x.Vendedor, x.Produtos, x.StatusVenda }).AsNoTracking();
+                var venda = _context.Vendas.Include(x => x.Produtos)
+                .Include(x => x.Cliente).Include(x => x.Vendedor)
+                .Where(v => v.Id == idVenda).AsNoTracking()
+                .Select(x => new { x.Produtos, x.Cliente, x.Vendedor.Nome });
+
 
                 if (venda is null)
-                    return NotFound("Venda não localizada");
+                    return NotFound("Venda não localizada.");
 
                 return Ok(venda);
             }
@@ -65,6 +69,7 @@ namespace ProjetoUm.Controllers
                     StatusVenda = vendaRequest.StatusVenda,
                     ValorTotal = vendaRequest.ValorTotal
                 };
+
 
                 _context.Vendas.Add(venda);
                 _context.SaveChanges();
